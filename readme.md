@@ -81,3 +81,31 @@ yt-dlp -f "bestvideo+bestaudio/best" --format-sort "filesize" -o "%(title)s.%(ex
 ```
 
 > **Note:** The videos will be downloaded to the same folder where the terminal is opened. 📂
+
+---
+
+# Using the Link Grabber Extension to Download Multiple YouTube or TikTok Videos
+
+You can use the **Link Grabber** Chrome extension to extract all the links from a webpage:
+🔗 [Link Grabber Extension](https://chromewebstore.google.com/detail/link-grabber/caodelkhipncidmoebgbbeemedohcdma)
+
+For example, if you visit a page containing multiple YouTube or TikTok videos (e.g., this TikTok profile: [@shugli_loog_officail](https://www.tiktok.com/@shugli_loog_officail)), you can use the extension to collect all video links at once.
+
+### Steps:
+
+1. **Install the Link Grabber extension**
+   👉 [Install from Chrome Web Store](https://chromewebstore.google.com/detail/link-grabber/caodelkhipncidmoebgbbeemedohcdma)
+
+2. **Pin the extension** to your Chrome toolbar for easy access.
+
+3. **Open the page** that contains multiple videos, such as:
+   [https://www.tiktok.com/@shugli_loog_officail](https://www.tiktok.com/@shugli_loog_officail)
+
+4. **Click the Link Grabber icon** in your toolbar. A new tab will open displaying all the links found on the page.
+
+5. **Copy the relevant video links** and paste them into a file named `links.txt`.
+
+6. **Save `links.txt`** in your desired folder.
+
+7. **Open Command Prompt** in that same folder and run the command as described in the
+   **"Downloading Videos from a Links File"** section.
