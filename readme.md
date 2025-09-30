@@ -47,3 +47,40 @@ yt-dlp -f "bestvideo+bestaudio/best" --format-sort "filesize" -o "%(title)s.%(ex
 ```
 
 > Note: The video will be downloaded to the same folder where the terminal is opened. 📂
+
+To add the instruction for downloading videos through a links file, you can extend your markdown as follows:
+
+---
+
+## Downloading Videos from a Links File 📋
+
+If you have a text file containing multiple YouTube video links, you can download all of them in batch by following these steps:
+
+1. **Prepare your links file**:
+   Create a text file (e.g., `links.txt`) containing all the YouTube video URLs you want to download. Make sure each link is on a separate line. Example:
+
+   ```txt
+   https://www.youtube.com/watch?v=video1
+   https://www.youtube.com/watch?v=video2
+   https://www.youtube.com/watch?v=video3
+   ```
+
+2. **Run the download command**:
+   In your terminal (CMD or PowerShell), navigate to the folder where your `links.txt` file is located. Then, use the following command to download all the videos listed in the file:
+
+### 1. Download the best quality YouTube video using links file: 🎥
+
+```bash
+yt-dlp -f "bestvideo+bestaudio/best" -o "%(title)s.%(ext)s" -a links.txt
+```
+
+### 2. Download the best quality YouTube video with a maximum file size using links file: 📦
+
+```bash
+yt-dlp -f "bestvideo+bestaudio/best" --format-sort "filesize" -o "%(title)s.%(ext)s" -a links.txt
+```
+
+> Note: The video will be downloaded to the same folder where the terminal is opened. 📂
+
+  
+
